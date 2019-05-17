@@ -1,5 +1,5 @@
 import discord
-
+import os
 client = discord.Client()
 
 
@@ -21,4 +21,6 @@ async def on_message(message):
     if message.content.startswith("!카운트1"):
         await message.channel.send("a!scrim countdown  1 곧시작합니다.")
 
-client.run("NTc4OTA1NzA5MDM5NzE0MzI3.XN7mHw.1ZpiDQnUNELxXQ18di40-fjmxiU")
+        
+access_token = os.environ["BOT_TOKEN"]        
+client.run(access_token)
