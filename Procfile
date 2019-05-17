@@ -1,1 +1,1 @@
-worker: python scrim.py
+worker: python scrim
