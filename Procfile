@@ -1,1 +1,1 @@
-worker: python ksp.py
+worker: python scrim.py
